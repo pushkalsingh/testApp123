@@ -1,0 +1,27 @@
+<div class="calculator-card">
+      <h3>Calculations for numbers up to {{ counterService.count() }}</h3>
+
+      @if (counterService.count() > 0) {
+        <div class="calculations-grid">
+          <div class="grid-header">Number</div>
+          <div class="grid-header">Square</div>
+          <div class="grid-header">Square Root</div>
+          <div class="grid-header">Factorial</div>
+
+          @for (num of getNumbersArray(counterService.count()); track num) {
+            <div class="grid-cell">{{ num }}</div>
+            <div class="grid-cell">{{ calculateSquare(num) }}</div>
+            <div class="grid-cell">{{ calculateSquareRoot(num) | number:'1.2-2' }}</div>
+            <div class="grid-cell">
+              @if (calculateFactorial(num) !== null) {
+                {{ calculateFactorial(num) }}
+              } @else {
+                Too Large
+              }
+            </div>
+          }
+        </div>
+      } @else {
+        <p class="error-message">Error: Please enter a positive number (greater than 0) to see calculations.</p>
+      }
+    </div>

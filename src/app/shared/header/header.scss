@@ -1,0 +1,69 @@
+.headingRow {
+    margin: auto;
+    background-color: burlywood;
+    height: 10vh;
+    padding: 10px;
+}
+
+.lists {
+    display: flex;
+    list-style-type: none;
+}
+
+.lists > li {
+    padding-left: 30px;
+}
+
+.lists > li > button {
+    width: 150px;
+    height: 30px;
+    background-color:rgb(195, 93, 56);
+    box-shadow: 4px 4px  rgb(178, 186, 194);
+    z-index: 40;
+}
+
+.lists > li > button > a {
+    text-decoration:none ;
+    color: aliceblue;
+}
+
+.subMenu {
+    display: none;
+    list-style-type: none;
+    margin-left: -40px;
+    z-index: 20;
+}
+
+.lists button:hover + .subMenu {
+    display: block;
+    z-index: 20;
+}
+
+.lists > li > ul:hover{
+    display: block;
+    z-index: 20;
+}
+
+.lists > li > ul > li {
+    padding-top: 5px;
+    padding-bottom: 10px ;
+    display: block;
+}
+
+.lists > li > ul > li > button {
+    width: 150px;
+    height: 30px;
+    background-color:rgb(192, 96, 62);
+    box-shadow: 4px 4px  aliceblue;
+    z-index: 1000;
+    display: block;
+}
+
+.lists > li > ul li > button > a {
+    text-decoration:none ;
+    color: aliceblue;
+}
+
+.router-link-active {
+    background-color: blanchedalmond;
+}

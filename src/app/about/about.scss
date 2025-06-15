@@ -1,0 +1,78 @@
+.about-container {
+  padding: 25px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f0f8ff; /* Light blue background */
+  border: 1px solid #a7d9f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.age-calculator {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.age-calculator h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.age-calculator label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+.age-calculator input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Adjust for padding and border */
+  max-width: 250px;
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+.error-message {
+  color: #dc3545; /* Red for errors */
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.result-message {
+  color: #28a745; /* Green for success */
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.instruction-message {
+  color: #6c757d; /* Gray for instructions */
+  font-style: italic;
+  margin-top: 15px;
+}

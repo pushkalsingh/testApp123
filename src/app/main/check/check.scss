@@ -1,0 +1,51 @@
+.calculator-card {
+      border: 1px solid #007bff;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+      background-color: #f0f8ff;
+    }
+    h3 {
+      color: #333;
+      margin-top: 0;
+    }
+    .error-message {
+      color: red;
+      font-weight: bold;
+    }
+
+    .calculations-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for Number, Square, SQRT, Factorial */
+      gap: 10px;
+      margin-top: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden; /* For rounded corners on borders */
+    }
+
+    .grid-header {
+      background-color: #e0e0e0;
+      padding: 8px;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .grid-cell {
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+
+    .grid-cell:nth-child(4n) { /* Apply to the last column's right border */
+      border-right: none;
+    }
+
+    .grid-cell:nth-child(odd) { /* Alternate row background for better readability */
+      background-color: #f8f8f8;
+    }
+
+    .grid-cell:last-child {
+        border-bottom: none; /* No border for the last row */
+    }

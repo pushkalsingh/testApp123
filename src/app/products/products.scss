@@ -1,0 +1,64 @@
+.products-container {
+  padding: 25px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #e6f7ff; /* Light blue background */
+  border: 1px solid #91d5ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #0056b3;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.time-display-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d9edf7;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.time-display-section h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+.current-time {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.elapsed-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns: label and value */
+  gap: 10px;
+  margin-top: 15px;
+  max-width: 400px; /* Constrain width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* Align text within grid cells */
+}
+
+.elapsed-grid .label {
+  font-weight: bold;
+  color: #495057;
+  padding-right: 10px; /* Space between label and value */
+}
+
+.elapsed-grid .value {
+  color: #212529;
+  font-size: 1.1em;
+}

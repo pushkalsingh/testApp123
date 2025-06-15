@@ -1,0 +1,45 @@
+<div class="services-container">
+  <h2>Our Services</h2>
+  <p>Explore the tools we offer. Here's a simple calculator!</p>
+
+  <div class="calculator-section">
+    <h3>Basic Calculator</h3>
+
+    <div class="input-group">
+      <label for="num1">Number 1:</label>
+      <input
+        type="number"
+        id="num1"
+        [ngModel]="num1()"
+        (ngModelChange)="num1.set($event)"
+        placeholder="Enter number"
+      >
+    </div>
+
+    <div class="input-group">
+      <label for="num2">Number 2:</label>
+      <input
+        type="number"
+        id="num2"
+        [ngModel]="num2()"
+        (ngModelChange)="num2.set($event)"
+        placeholder="Enter number (for binary ops)"
+      >
+    </div>
+
+    <div class="button-group">
+      <button (click)="add()">+</button>
+      <button (click)="subtract()">-</button>
+      <button (click)="multiply()">*</button>
+      <button (click)="divide()">/</button>
+      <button (click)="square()">x²</button>
+      <button (click)="squareRoot()">√x</button>
+    </div>
+
+    @if (errorMessage()) {
+      <p class="message error-message">{{ errorMessage() }}</p>
+    } @else if (result() !== null) {
+      <p class="message result-message">Result: <strong>{{ result() }}</strong></p>
+    }
+  </div>
+</div>

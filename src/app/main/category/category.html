@@ -1,0 +1,32 @@
+ <div class="advanced-math-card">
+      <h3>Advanced Calculations (Count: {{ counterService.count() }})</h3>
+
+      @if (counterService.count() > 0) {
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Number</th>
+                <th>Prime?</th>
+                <th>Square</th>
+                <th>Cube</th>
+                <th>Running Sum</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (row of mathRows(); track row.number) {
+                <tr>
+                  <td>{{ row.number }}</td>
+                  <td>{{ row.isPrime ? 'Yes' : 'No' }}</td>
+                  <td>{{ row.square }}</td>
+                  <td>{{ row.cube }}</td>
+                  <td>{{ row.runningSum }}</td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      } @else {
+        <p class="error-message">Error: Please enter a positive number (greater than 0) to display calculations.</p>
+      }
+    </div>

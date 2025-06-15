@@ -1,0 +1,105 @@
+.services-container {
+  padding: 25px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f8f9fa; /* Light gray background */
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #343a40;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.calculator-section {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.calculator-section h3 {
+  color: #007bff;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.input-group input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Adjust for padding and border */
+  max-width: 200px;
+  font-size: 1em;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button-group button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  min-width: 60px; /* Ensure buttons have consistent size */
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.button-group button:active {
+  transform: translateY(0);
+}
+
+.message {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.result-message {
+  background-color: #d4edda; /* Light green */
+  border: 1px solid #28a745; /* Green border */
+  color: #155724; /* Dark green text */
+}
+
+.error-message {
+  background-color: #f8d7da; /* Light red */
+  border: 1px solid #dc3545; /* Red border */
+  color: #721c24; /* Dark red text */
+}   

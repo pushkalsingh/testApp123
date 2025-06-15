@@ -1,0 +1,44 @@
+<div class="products-container">
+  <h2>Our Products</h2>
+  <p>Here you can see some time calculations!</p>
+
+  <div class="time-display-section">
+    <h3>Current Date and Time:</h3>
+    <p class="current-time">{{ currentDateTime() | date: 'fullDate' }}</p>
+    <p class="current-time">{{ currentDateTime() | date: 'mediumTime' }}</p>
+  </div>
+
+  <div class="time-display-section">
+    <h3>Time Elapsed From Jan 1, 2000, 00:00:00</h3>
+    @if (elapsedFrom2000()) {
+      <div class="elapsed-grid">
+        <div class="label">Years:</div><div class="value">{{ elapsedFrom2000()!.years }}</div>
+        <div class="label">Months:</div><div class="value">{{ elapsedFrom2000()!.months }}</div>
+        <div class="label">Weeks:</div><div class="value">{{ elapsedFrom2000()!.weeks }}</div>
+        <div class="label">Days:</div><div class="value">{{ elapsedFrom2000()!.days }}</div>
+        <div class="label">Hours:</div><div class="value">{{ elapsedFrom2000()!.hours }}</div>
+        <div class="label">Minutes:</div><div class="value">{{ elapsedFrom2000()!.minutes }}</div>
+        <div class="label">Seconds:</div><div class="value">{{ elapsedFrom2000()!.seconds }}</div>
+      </div>
+    } @else {
+      <p>Calculating...</p>
+    }
+  </div>
+
+  <div class="time-display-section">
+    <h3>Time Elapsed From Start of Current Year</h3>
+    @if (elapsedFromCurrentYear()) {
+      <div class="elapsed-grid">
+        <div class="label">Years:</div><div class="value">{{ elapsedFromCurrentYear()!.years }}</div>
+        <div class="label">Months:</div><div class="value">{{ elapsedFromCurrentYear()!.months }}</div>
+        <div class="label">Weeks:</div><div class="value">{{ elapsedFromCurrentYear()!.weeks }}</div>
+        <div class="label">Days:</div><div class="value">{{ elapsedFromCurrentYear()!.days }}</div>
+        <div class="label">Hours:</div><div class="value">{{ elapsedFromCurrentYear()!.hours }}</div>
+        <div class="label">Minutes:</div><div class="value">{{ elapsedFromCurrentYear()!.minutes }}</div>
+        <div class="label">Seconds:</div><div class="value">{{ elapsedFromCurrentYear()!.seconds }}</div>
+      </div>
+    } @else {
+      <p>Calculating...</p>
+    }
+  </div>
+</div>

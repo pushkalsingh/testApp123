@@ -1,0 +1,28 @@
+<div class="about-container">
+  <h2>About Us</h2>
+  <p>This is the About page. Here, you can check your age!</p>
+
+  <div class="age-calculator">
+    <h3>Age Calculator</h3>
+    <label for="dob">Enter Your Date of Birth:</label>
+    <input
+      type="date"
+      id="dob"
+      [ngModel]="selectedDob()"
+      (ngModelChange)="selectedDob.set($event); onDobChange()"
+      (change)="onDobChange()"
+    >
+
+    @if (errorMessage()) {
+      <p class="error-message">{{ errorMessage() }}</p>
+    }
+
+    @if (age() !== null && age() !== undefined) {
+      <p class="result-message">
+        Your calculated age is: <strong>{{ age() }} years</strong>
+      </p>
+    } @else if (!errorMessage()) {
+      <p class="instruction-message">Select a date to calculate your age.</p>
+    }
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<header>
+    <div class="headingRow">
+        <ul class="lists">
+            <li>
+                <button><a [routerLink]="['/main']" routerLinkActive="router-link-active" >Main</a></button>
+                <ul class="subMenu">
+                    <li><button><a routerLink="main/system" routerLinkActive="router-link-active">System</a></button></li>
+                    <li><button><a routerLink="main/check" routerLinkActive="router-link-active">Check</a></button></li>
+                    <li><button><a routerLink="main/page" routerLinkActive="router-link-active">Page</a></button></li>
+                    <li><button><a routerLink="main/category" routerLinkActive="router-link-active">Category</a></button></li>
+                </ul>
+            </li>
+            <li><button><a [routerLink]="['/about']" routerLinkActive="router-link-active">About</a></button></li>
+            <li><button><a [routerLink]="['/services']" routerLinkActive="router-link-active">Services</a></button></li>
+            <li><button><a [routerLink]="['/product']" routerLinkActive="router-link-active">Products</a></button></li>
+            <li><button><a [routerLink]="['/extra']" routerLinkActive="router-link-active">Extra</a></button></li>
+        </ul>
+    </div>
+    <router-outlet></router-outlet>
+</header>

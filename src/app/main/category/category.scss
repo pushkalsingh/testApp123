@@ -1,0 +1,48 @@
+ .advanced-math-card {
+      border: 1px solid #ffc107; /* Warning yellow border */
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+      background-color: #fffbe6;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h3 {
+      color: #333;
+      margin-top: 0;
+      border-bottom: 1px solid #ffc107;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+    .error-message {
+      color: red;
+      font-weight: bold;
+      padding: 10px;
+      background-color: #ffe0e0;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .table-container {
+      overflow-x: auto; /* Enable horizontal scrolling for small screens */
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #ffeb99; /* Light yellow header */
+      font-weight: bold;
+      color: #333;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+    tbody tr:hover {
+      background-color: #f0f0f0;
+    }

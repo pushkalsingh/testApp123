@@ -1,0 +1,30 @@
+body {
+  z-index: 1;
+}
+.main-content {
+      border: 2px solid #28a745; /* Green border for main component */
+      padding: 20px;
+      margin: 15px;
+      border-radius: 10px;
+      background-color: #e6ffe6;
+      z-index: 1;
+    }
+    .button-group button {
+      margin: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      background-color: #28a745; /* Green buttons */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .button-group button:hover {
+      background-color: #218838;
+    }
+    .current-count {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #007bff;
+    }
+    hr { margin: 20px 0; border-color: #28a745; }

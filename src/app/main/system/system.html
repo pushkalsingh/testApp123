@@ -1,0 +1,27 @@
+ <div class="calculator-card">
+      <h3>Calculations for {{ counterService.count() }}</h3>
+      <p>
+        <strong>Square:</strong>
+        @if (square() !== null) {
+          <span>{{ square() }}</span>
+        } @else {
+          <span>N/A</span>
+        }
+      </p>
+      <p>
+        <strong>Square Root:</strong>
+        @if (squareRoot() !== null) {
+          <span>{{ squareRoot() | number:'1.2-2' }}</span>
+        } @else {
+          <span>N/A (Negative or not a number)</span>
+        }
+      </p>
+      <p>
+        <strong>Factorial:</strong>
+        @if (factorial() !== null) {
+          <span>{{ factorial() }}</span>
+        } @else {
+          <span>N/A (Requires non-negative integer)</span>
+        }
+      </p>
+    </div>

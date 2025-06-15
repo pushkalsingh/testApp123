@@ -1,0 +1,34 @@
+<div class="math-series-card">
+      <h3>Mathematical Series (Count: {{ counterService.count() }})</h3>
+
+      @if (counterService.count() > 0) {
+        <div class="series-section">
+          <h4>First {{ counterService.count() }} Prime Numbers:</h4>
+          @if (firstNPrimes().length > 0) {
+            <ul class="series-list">
+              @for (prime of firstNPrimes(); track prime) {
+                <li>{{ prime }}</li>
+              }
+            </ul>
+          } @else {
+            <p>No prime numbers for this count (or count is too large).</p>
+          }
+        </div>
+
+        <div class="series-section">
+          <h4>First {{ counterService.count() }} Fibonacci Numbers:</h4>
+          @if (firstNFibonacci().length > 0) {
+            <ul class="series-list">
+              @for (fib of firstNFibonacci(); track fib) {
+                <li>{{ fib }}</li>
+              }
+            </ul>
+          } @else {
+            <p>No Fibonacci numbers for this count (or count is too large for safe integer).</p>
+          }
+        </div>
+
+      } @else {
+        <p class="error-message">Error: Please enter a positive number (greater than 0) to display the series.</p>
+      }
+    </div>
